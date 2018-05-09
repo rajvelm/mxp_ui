@@ -38,6 +38,12 @@ const MENUITEMS = [
     name: 'Inventory',
     type: 'link',
     icon: 'basic-server2'
+  },
+  {
+    state: 'client',
+    name: 'Client',
+    type: 'link',
+    icon: 'basic-server2'
   }
 ];
 

@@ -1,0 +1,187 @@
+<div class="row">
+  <div class="col-lg-6">
+	<div class="card">
+      <div class="card-header">
+        Register
+      </div>
+      <div class="card-block">
+        <!--<p>The <code class="highlighter-rouge">.form-group</code> class is the easiest way to add some structure to forms. Its only purpose is to provide <code class="highlighter-rouge">margin-bottom</code> around a label and control pairing. As a bonus, since it’s a class you can use it with <code class="highlighter-rouge">&lt;fieldset&gt;</code>s, <code class="highlighter-rouge">&lt;div&gt;</code>s, or nearly any other element.</p>-->
+        <form>
+          <div class="form-group">
+            <label for="companyName">Company Name</label>
+            <input type="text" class="form-control" id="companyName" placeholder="Company Name">
+          </div>
+          <div class="form-group">			
+			<label for="companyLogo">Company Logo</label>
+			<div class="col-lg-12">
+			<input type="file" id="companyLogo" class="custom-file-input">
+			<span class="form-control custom-file-control"></span>
+			</div>			
+          </div>
+		  <div class="form-group">
+            <label for="companyAddress">Company Address</label>
+			<textarea class="form-control" id="companyAddress" rows="3" placeholder="Company Address"></textarea>            
+          </div>
+		  <div class="form-group row">
+			<div class="col-lg-4">
+				<label for="companyRegion">Region</label>
+				<select class="form-control custom-select" id="companyRegion">
+				  <option selected>Select Region</option>
+				  <option value="1">Region 1</option>
+				  <option value="2">Region 2</option>
+				  <option value="3">Region 3</option>
+				</select>				
+			</div>
+			<div class="col-lg-4">
+				<label for="companyCountry">Country</label>
+				<select class="form-control" id="companyCountry">
+				  <option selected>Select Country</option>
+				  <option value="1">Country 1</option>
+				  <option value="2">Country 2</option>
+				  <option value="3">Country 3</option>
+				</select>	
+			</div>
+			<div class="col-lg-4">
+				<label for="companyState">State</label>
+				<select class="form-control custom-select" id="companyState">
+				  <option selected>Select State</option>
+				  <option value="1">State 1</option>
+				  <option value="2">State 2</option>
+				  <option value="3">State 3</option>
+				</select>	
+			</div>
+          </div>
+        </form>
+      </div>
+	</div>
+  </div>
+  <div class="col-lg-6">
+	<div class="card">
+      <div class="card-block">
+		<div class="row">
+			<div class="col-lg-2">&nbsp;</div>
+			<div class="col-lg-10"><input type="checkbox" class="form-check-input">&nbsp;Legal Agreement</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-2">&nbsp;</div>
+			<div class="col-lg-10"><input type="checkbox" class="form-check-input">&nbsp;Cloud Setup</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-2">&nbsp;</div>
+			<div class="col-lg-10"><input type="checkbox" class="form-check-input">&nbsp;Users</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-2">&nbsp;</div>
+			<div class="col-lg-10"><input type="checkbox" class="form-check-input">&nbsp;Accounts</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-2">&nbsp;</div>
+			<div class="col-lg-10"><input type="checkbox" class="form-check-input">&nbsp;Billing Address</div>
+		</div>
+	  </div>
+	</div>
+  </div>  
+</div>	
+<div class="row">
+  <div class="col-lg-11">
+	<div class="card">
+      <ngb-tabset class="card-tab">
+          <ngb-tab title="Contacts">
+            <ng-template ngbTabContent>
+			<div class="row">
+			  <div class="col-lg-5">
+				<div class="card">
+				  <div class="card-header">
+					Contacts
+				  </div>
+				  <div class="card-block card-widget">
+					<div class="form-group row">
+						<div class="col-lg-3">
+							<label for="nameTitle">Title</label>
+							<select class="form-control custom-select" id="nameTitle">
+							  <option selected>Select</option>
+							  <option value="1">Mr.</option>
+							  <option value="2">Mrs</option>
+							  <option value="3">Miss</option>
+							</select>	
+						</div>
+						<div class="col-lg-9">
+						<label for="contactName">Name</label>
+						<input type="text" class="form-control" id="contactName" placeholder="Name">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="contactDesgn">Designation</label>
+						<input type="text" class="form-control" id="contactDesgn" placeholder="Designation">
+					</div>
+					<div class="form-group">
+						<label for="contactAddress">Address</label>
+						<input type="text" class="form-control" id="contactAddress" placeholder="Address">
+					</div>
+					<div class="form-group">
+						<label for="contactEmail">Email</label>
+						<input type="text" class="form-control" id="contactEmail" placeholder="Email">
+					</div>
+					<div class="form-group">
+						<label for="contactPhone">Phone</label>
+						<input type="text" class="form-control" id="contactPhone" placeholder="Phone">
+					</div>
+				  </div>
+				</div>
+			  </div>
+			  <div class="col-lg-6">
+				<div class="card">
+				  <div class="card-header">
+					<p>
+					Vice President<br><br><br>
+					Address<br>
+					7783, Jarwal, Mecca 24231 3106,<br>
+					Arabie saoudite-MECCA<br>
+					<br>
+					Email<br>
+					tony.broughton@thales.com<br>
+					<br>
+					Phone<br>
+					+351 212 48 48 48<br>
+					</p>
+				  </div>
+				  <div class="card-block card-widget">
+					
+				  </div>
+				</div>
+				<div class="col-lg-1">&nbsp;</div>
+			  </div>
+			</div>  
+			</ng-template>
+		  </ngb-tab>
+		  <ngb-tab title="Legal Agreement">
+            <ng-template ngbTabContent>
+			Legal Agreement 
+			</ng-template>
+		  </ngb-tab>
+		  <ngb-tab title="Cloud Setup">
+            <ng-template ngbTabContent>
+			Cloud Setup 
+			</ng-template>
+		  </ngb-tab>
+		  <ngb-tab title="Users">
+            <ng-template ngbTabContent>
+			Users 
+			</ng-template>
+		  </ngb-tab>
+		  <ngb-tab title="Accounts">
+            <ng-template ngbTabContent>
+			Accounts 
+			</ng-template>
+		  </ngb-tab>
+		  <ngb-tab title="Billing Address">
+            <ng-template ngbTabContent>
+			Billing Address 
+			</ng-template>
+		  </ngb-tab>
+	  </ngb-tabset>	
+	 <div>
+  </div>	
+  <div class="col-lg-1">&nbsp;
+  </div>
+</div>
