@@ -15,8 +15,8 @@ export const AppRoutes: Routes = [{
     loadChildren: './onboarding/onboarding.module#OnboardingModule'
   },
   {
-    path: 'fees',
-    loadChildren: './feesupload/feesupload.module#FeesuploadModule'
+    path: 'feesupload',
+    loadChildren: './feesupload/fees.module#FeesModule'
   },
   {
     path: 'waiverupload',
