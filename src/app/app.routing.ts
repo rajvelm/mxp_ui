@@ -15,8 +15,36 @@ export const AppRoutes: Routes = [{
     loadChildren: './onboarding/onboarding.module#OnboardingModule'
   },
   {
+    path: 'fees',
+    loadChildren: './feesupload/feesupload.module#FeesuploadModule'
+  },
+  {
+    path: 'waiverupload',
+    loadChildren: './waiverupload/waiverupload.module#WaiveruploadModule'
+  },
+  {
     path: 'inventory',
     loadChildren: './inventory/inventory.module#InventoryModule'
+  },
+  {
+    path: 'declaration',
+    loadChildren: './declaration/declaration.module#DeclarationModule'
+  },
+  {
+    path: 'chargebacks',
+    loadChildren: './chargebacks/chargebacks.module#ChargebacksModule'
+  },  
+  {
+    path: 'approvals',
+    loadChildren: './approvals/approvals.module#ApprovalsModule'
+  },  
+  {
+    path: 'reports',
+    loadChildren: './reports/reports.module#ReportsModule'
+  },
+  {
+    path: 'documents',
+    loadChildren: './documents/documents.module#DocumentsModule'
   },
   {
     path: 'client',

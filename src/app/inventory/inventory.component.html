@@ -1,12 +1,38 @@
-<ag-grid-angular
-        style="width: 900px; height: 500px;"
-        class="ag-fresh"
-        [gridOptions]="gridOptions"
-        [isFullWidthCell]="isFullWidthCell"
-        [getRowHeight]="getRowHeight"
-        [getNodeChildDetails]="getNodeChildDetails"
-        [fullWidthCellRendererFramework]="getFullWidthCellRenderer()"
+<div class="row">	
+	<div class="card">
+		<div class="card-block">
+			<div class="col-6">
+				<h6 class="card-title">
+				Add Client Configuration
+				</h6>
+			</div>		
+			<input type="text" placeholder="Client Name" [(ngModel)]="clientName"
+			class="col-6 form-control" />
+			<br><br>
+			<ng2-smart-table [settings]="settings"></ng2-smart-table><br>
+			<div class="row">
+				<div class="col-sm-6"></div>
+				<div class="col-sm-6">
+					<button type="submit" class="btn btn-primary"
+						(click)="saveClientConfig(source,clientName)">Submit</button>
+				</div>
+			</div>
+		</div>	
+	</div>
+</div>
 
-        enableSorting
-        enableColResize>
-</ag-grid-angular>
+<div class="card">
+	<div class="card-block">
+		<div class="col-sm-12">
+			<h6 class="card-title">
+			Config Summary
+			</h6>
+			<br>			
+			<ng2-smart-table [settings]="settingsSummary" > </ng2-smart-table>		
+		</div>
+	</div>	
+</div>
+
+
+
+

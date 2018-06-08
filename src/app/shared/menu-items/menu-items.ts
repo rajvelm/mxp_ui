@@ -29,22 +29,65 @@ const MENUITEMS = [
   },
   {
     state: 'onboarding',
-    name: 'Onboarding',
+    name: 'User Onboarding',
     type: 'link',
     icon: 'basic-paperplane'
   },
   {
+    state: 'feesupload',
+    name: 'Fees Upload',
+    type: 'link',
+    icon: 'basic-upload'
+  },
+  {
+    state: 'waiverupload',
+    name: 'Waiver Upload',
+    type: 'link',
+    icon: 'basic-server-upload'
+  },
+ {
     state: 'inventory',
     name: 'Inventory',
     type: 'link',
     icon: 'basic-server2'
   },
   {
+    state: 'declaration',
+    name: 'Declaration',
+    type: 'link',
+    icon: 'basic-sheet-multiple'
+  },
+  {
+    state: 'chargebacks',
+    name: 'ChargeBacks',
+    type: 'link',
+    icon: 'basic-trashcan'
+  },
+  {
+    state: 'approvals',
+    name: 'Approvals',
+    type: 'link',
+    icon: 'basic-todo-pen'
+  },
+  {
+    state: 'reports',
+    name: 'Reports',
+    type: 'link',
+    icon: 'basic-sheet-txt'
+  },
+  {
+    state: 'documents',
+    name: 'Documents',
+    type: 'link',
+    icon: 'basic-notebook'
+  }
+ /* {
     state: 'client',
     name: 'Client',
     type: 'link',
     icon: 'basic-server2'
-  }
+  }*/
+  
 ];
 
 @Injectable()

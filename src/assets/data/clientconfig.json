@@ -1,0 +1,5 @@
+[
+ { fieldId: '1', fieldName: 'configId', fieldType: 'number', fieldSize: 10 },
+ { fieldId: '2', fieldName: 'configsetting', fieldType: 'string', fieldSize: 50 },
+ { fieldId: '2', fieldName: 'configname', fieldType: 'string', fieldSize: 50 }
+]
